@@ -14,8 +14,8 @@ yarl==1.3.0
 environs
 numexpr
 certifi==2018.4.16
-requests==2.18.4
-urllib3==1.22
+requests==2.20.0
+urllib3==1.24.2
 python-dateutil
 cachetools==2.1.0
 pokebase

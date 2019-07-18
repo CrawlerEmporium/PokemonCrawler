@@ -205,3 +205,5 @@ def getGame(name):
         return "Sun / Moon"
     if name == "ultra-sun-ultra-moon":
         return "Ultra Sun / Ultra Moon"
+
+TYPES = ['normal', 'fighting', 'flying', 'poison', 'ground', 'rock', 'bug', 'ghost', 'steel', 'fire', 'water', 'grass', 'electric', 'psychic', 'ice', 'dragon', 'dark', 'fairy']
