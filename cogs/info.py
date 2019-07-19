@@ -117,11 +117,11 @@ class Info(commands.Cog):
         em.add_field(name='Voice Channels', value=f"{totalVoice}")
         em.add_field(name="Invite",
                      value="[Click Here](https://discordapp.com/oauth2/authorize?client_id=574554734187380756&scope=bot&permissions=0)")
-        em.add_field(name='Source', value="COMING SOON")
-        em.add_field(name='Issue Tracker', value="COMING SOON")
+        em.add_field(name='Source', value="[Click Here](https://github.com/5ecrawler/PokemonCrawler)")
+        em.add_field(name='Issue Tracker', value="[Click Here](https://github.com/5ecrawler/PokemonCrawler)")
         em.add_field(name="About",
                      value='A Pokemon lookup bot made by LordDusk#0001 .\n[Support Server](https://discord.gg/HEY6BWj)')
-        em.set_footer(text=f"PokemonCrawler {ctx.bot.version} | Powered by discord.py")
+        em.set_footer(text=f"PokemonCrawler {ctx.bot.version} | Powered by discord.py and PokéAPI.co")
         await ctx.send(embed=em)
 
 
