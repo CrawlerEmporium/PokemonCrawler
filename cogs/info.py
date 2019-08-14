@@ -38,7 +38,6 @@ class Info(commands.Cog):
 
     @commands.command()
     @commands.guild_only()
-    @GG.is_owner()
     async def prefix(self, ctx, prefix: str = None):
         """Sets the bot's prefix for this server.
         Forgot the prefix? Reset it with "PokemonCrawler#5165 prefix !".

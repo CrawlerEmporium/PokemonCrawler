@@ -229,22 +229,22 @@ async def getPokemon(pokemon):
     else:
         em.add_field(name="Type", value=type)
 
-    stats = f"Speed: **{speed}**\nSp.Def: **{specialDefense}**\nSp.Atk: **{specialAttack}**\nDefense: **{defense}**\nAttack: **{attack}**\nHP: **{hp}**\nTotal: **{int(speed) + int(specialDefense) + int(specialAttack) + int(defense) + int(attack) + int(hp)} ** "
+    stats = f"HP: **{hp}**\nAttack: **{attack}**\nDefense: **{defense}**\nSp.Atk: **{specialAttack}**\nSp.Def: **{specialDefense}**\nSpeed: **{speed}**\nTotal: **{int(speed) + int(specialDefense) + int(specialAttack) + int(defense) + int(attack) + int(hp)} ** "
     em.add_field(name="Height", value=f"{round(int(height) * 3.937, 1)}\"")  # decimeters to inches
     em.add_field(name="Weight", value=f"{round(int(weight) * 0.2205, 2)} lbs")  # hectograms to pounds
     em.add_field(name="Egg Groups", value=eggGroups)
-    if speedEffort != 0:
-        em.add_field(name="EV Gained", value=f"Speed: {speedEffort}")
-    if specialDefenseEffort != 0:
-        em.add_field(name="EV Gained", value=f"Sp.Def: {specialDefenseEffort}")
-    if specialAttackEffort != 0:
-        em.add_field(name="EV Gained", value=f"Sp.Atk: {specialAttackEffort}")
-    if defenseEffort != 0:
-        em.add_field(name="EV Gained", value=f"Defense: {defenseEffort}")
-    if attackEffort != 0:
-        em.add_field(name="EV Gained", value=f"Attack: {attackEffort}")
     if hpEffort != 0:
         em.add_field(name="EV Gained", value=f"HP: {hpEffort}")
+    if attackEffort != 0:
+        em.add_field(name="EV Gained", value=f"Attack: {attackEffort}")
+    if defenseEffort != 0:
+        em.add_field(name="EV Gained", value=f"Defense: {defenseEffort}")
+    if specialAttackEffort != 0:
+        em.add_field(name="EV Gained", value=f"Sp.Atk: {specialAttackEffort}")
+    if specialDefenseEffort != 0:
+        em.add_field(name="EV Gained", value=f"Sp.Def: {specialDefenseEffort}")
+    if speedEffort != 0:
+        em.add_field(name="EV Gained", value=f"Speed: {speedEffort}")
 
     em.add_field(name="Base Stats", value=stats, inline=False)
     em.colour = int("0x" + color, 0)
